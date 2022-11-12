@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> Contato </title>
+	<meta charset="utf-8">
+
+    <style type="text/css">
+        body{
+            background-color:    ; /* escolha uma cor de fundo para a página de contato */
+            font-family: ;
+        }
+
+        header {
+                background:  ; /* escolha uma cor de fundo para o cabeçalho */
+                padding: 5px 0;
+            }
+
+         nav {
+                position: absolute;
+                top: 90px;
+                right: 0;
+            }
+
+            nav li {
+                display: inline;
+                margin: 70px;
+            }
+
+            nav a {
+                text-transform: ; /* deixe as letras dos links  todas maiusculas (caixa alta) */
+                color:  ;
+                font-weight: bold;
+                font-size: 22px;
+                text-decoration: none;
+            }
+
+            nav a:hover {
+                color: #C78C19;
+                text-decoration: none;
+            }
+
+
+        form {
+            margin-left: 40px;
+        }
+
+        button{
+            width:20%;
+            padding: 15px;
+            background:  ;   /*escolha a cor do botão */
+            color:   ; /*escolha a cor da fonte do botão */
+            font-weight: bold;
+            font-size: 10px; /*altere o tamanho da fonte deixando-a maior que 10*/
+            border: none;
+            border-radius: 5px; /*altere o arredondamento das bordas */
+            transition: 1s all;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: ; /*escolha a cor que o botão deve assumir ao passar o mouse sobre ele */
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;"> CONTATO DA BARBEARIA ALURA </h1>
+    <header>
+            <div style="position: relative; width: 940px; margin: 0 auto;">
+                <h1> <img src="logo.png"> </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="produtos.html"> Produtos </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <form>
+        <p> 
+            Nome: <input type="text" name=""> 
+            Telefone: <input type="number" name=""> 
+            E-mail: <input type="Email" name=""> 
+            Data: <input type="Date" name="">
+        </p>
+        <hr>
+        <h4> Qual horário você prefere ser atendido? </h4>
+        	<input type="radio" name="horario" checked> Manhã
+        	<input type="radio" name="horario"> Tarde
+        	<input type="radio" name="horario"> Noite
+        	<hr>
+        <h4> Como você prefere o nosso contato? </h4>
+        	<select>
+        		<option>E-mail</option>
+        		<option>Telefone</option>
+        		<option>Whatsapp</option>
+        	</select>
+        	<hr>
+        <p> <input type="checkbox" name="">
+        	Gostaria de receber as novidades por
+        	 e-mail? </p>
+        <p>Deixe-nos uma mensagem:.</p>
+             <textarea rows="5" cols="50"></textarea>
+             <br>
+
+             <button>Enviar</button>
+    	</form>
+</body>
+</html>
